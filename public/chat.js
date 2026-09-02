@@ -276,3 +276,64 @@ function consumeSseEvents(buffer) {
         voiceButton.textContent = "🎤 Speak";
     });
 })();
+// ========================================
+// ALVNTORA AI - VOICE OUTPUT
+// ========================================
+
+(function () {
+    if (!("speechSynthesis" in window)) {
+        console.log("Voice output is not supported in this browser.");
+        return;
+    }
+
+    const chat = document.getElementById("chat-messages");
+    if (!chat) return;
+
+    let speakTimer = null;
+    let lastSpokenText = "";
+
+    function speakLatestAnswer() {
+        const messages = chat.querySelectorAll(".assistant-message");
+        if (!messages.length) return;
+
+        const latest = messages[messages.length - 1];
+        const text = latest.innerText.trim();
+
+        if (!text || text === lastSpokenText) return;
+
+        lastSpokenText = text;
+
+        window.speechSynthesis.cancel();
+
+        const speech = new SpeechSynthesisUtterance(text);
+        speech.lang = "en-US";
+        speech.rate = 0.95;
+        speech.pitch = 1;
+
+        window.speechSynthesis.speak(speech);
+    }
+
+    const observer = new MutationObserver(() => {
+        clearTimeout(speakTimer);
+
+        speakTimer = setTimeout(() => {
+            speakLatestAnswer();
+        }, 1200);
+    });
+
+    observer.observe(chat, {
+        childList: true,
+        subtree: true,
+        characterData: true
+    });
+
+    const stopButton = document.createElement("button");
+    stopButton.type = "button";
+    stopButton.textContent = "🔇 Stop Voice";
+
+    stopButton.addEventListener("click", () => {
+        window.speechSynthesis.cancel();
+    });
+
+    chat.parentNode.insertBefore(stopButton, chat.nextSibling);
+})();
