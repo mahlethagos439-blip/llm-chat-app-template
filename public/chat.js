@@ -228,3 +228,51 @@ function consumeSseEvents(buffer) {
 	}
 	return { events, buffer: normalized };
 }
+// ========================================
+// ALVNTORA AI - VOICE INPUT
+// ========================================
+
+(function () {
+    const input = document.getElementById("user-input");
+    const sendButton = document.getElementById("send-button");
+
+    if (!input || !sendButton) return;
+
+    const SpeechRecognition =
+        window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+        console.log("Voice input is not supported in this browser.");
+        return;
+    }
+
+    const voiceButton = document.createElement("button");
+    voiceButton.type = "button";
+    voiceButton.textContent = "🎤 Speak";
+
+    sendButton.parentNode.insertBefore(voiceButton, sendButton);
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = "en-US";
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    voiceButton.addEventListener("click", () => {
+        recognition.start();
+        voiceButton.textContent = "🔴 Listening...";
+    });
+
+    recognition.addEventListener("result", (event) => {
+        input.value = event.results[0][0].transcript;
+        voiceButton.textContent = "🎤 Speak";
+        sendButton.click();
+    });
+
+    recognition.addEventListener("end", () => {
+        voiceButton.textContent = "🎤 Speak";
+    });
+
+    recognition.addEventListener("error", () => {
+        voiceButton.textContent = "🎤 Speak";
+    });
+})();
