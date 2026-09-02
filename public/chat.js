@@ -337,3 +337,66 @@ function consumeSseEvents(buffer) {
 
     chat.parentNode.insertBefore(stopButton, chat.nextSibling);
 })();
+// ========================================
+// ALVNTORA LEARNING AI - REAL FEATURE CONNECTIONS
+// ========================================
+
+(function () {
+    const input = document.getElementById("user-input");
+    const sendButton = document.getElementById("send-button");
+
+    if (!input || !sendButton) return;
+
+    const features = {
+        "tutor-button":
+            "Act as my personal AI tutor. Teach me step by step, explain simply, check my understanding, and adapt to my level.",
+
+        "quiz-button":
+            "Quiz me on the subject I choose. Ask one question at a time, wait for my answer, score me, explain mistakes, and increase difficulty when I improve.",
+
+        "study-plan-button":
+            "Create a personalized study plan for me. Ask about my subjects, available study time, goals, and exam date, then make a realistic daily and weekly plan.",
+
+        "exam-button":
+            "Enter exam preparation mode. Give me exam-style questions, let me answer, mark my answers, explain mistakes, track my weak areas, and gradually increase difficulty.",
+
+        "progress-button":
+            "Help me review my learning progress. Ask what I have studied, what I understand, my quiz results, and my difficulties, then give me a progress summary and recommendations.",
+
+        "diary-button":
+            "Open my study diary. Help me record what I studied today, what I understood, what I found difficult, and what I should study next.",
+
+        "feelings-button":
+            "Help me reflect on how I feel about my learning today. Ask gentle questions and give supportive, practical advice for studying.",
+
+        "reflection-button":
+            "Guide me through a daily learning reflection: what went well, what was difficult, what I learned, and what I will improve tomorrow.",
+
+        "strength-button":
+            "Help me identify my academic strengths. Ask me questions about my subjects, study habits, quiz results, and learning experiences, then explain my strengths and how to use them.",
+
+        "weakness-button":
+            "Help me identify my academic weaknesses. Ask questions, analyze my mistakes and difficulties, and create a plan to improve them.",
+
+        "planner-button":
+            "Help me organize my studies. Build a practical schedule around my subjects, priorities, available time, exams, and goals.",
+
+        "writing-button":
+            "Help me improve my writing. Check my writing, explain my mistakes clearly, suggest improvements, and help me become a stronger writer.",
+
+        "music-button":
+            "Help me use music and sound productively while studying. Suggest study-friendly approaches and explain when music may help or distract me."
+    };
+
+    Object.keys(features).forEach(function (buttonId) {
+        const button = document.getElementById(buttonId);
+
+        if (!button) return;
+
+        button.addEventListener("click", function () {
+            input.value = features[buttonId];
+            input.focus();
+            sendButton.click();
+        });
+    });
+})();
