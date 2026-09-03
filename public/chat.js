@@ -400,3 +400,243 @@ function consumeSseEvents(buffer) {
         });
     });
 })();
+ADD ALL OF THESE REMAINING ALVNTORA LEARNING AI FEATURES WITHOUT REMOVING OR BREAKING ANY EXISTING FEATURES:
+
+1. ❤️ SMART MOTIVATION & EMOTIONAL SUPPORT
+- Detect discouragement, frustration, stress, confusion, loss of confidence, and wanting to give up.
+- Respond with honest, supportive, actionable encouragement.
+- Understand the reason for the struggle instead of giving generic motivation.
+- Give small practical next steps.
+- Encourage students without making false promises.
+
+2. 🧠 PERSONALIZED LEARNING ENGINE
+- Build a learning profile for each student.
+- Track level, subjects, topics, strengths, weaknesses, mistakes, quiz results, exam results, study history, goals, pace, and preferences.
+- Use this information to personalize teaching, practice, revision and recommendations.
+
+3. 🔄 ADAPTIVE LEARNING
+- Automatically adjust difficulty.
+- Give easier explanations when the student struggles.
+- Give harder questions when the student is ready.
+- Use different explanations, examples, analogies and practice when one explanation does not work.
+
+4. 📷 PHOTO / IMAGE LEARNING
+- Allow students to upload or take photos of questions, homework, textbooks, notes and handwritten work.
+- Analyze the image.
+- Explain it step-by-step.
+- Check the student's work and mistakes.
+
+5. 🎤 ADVANCED VOICE LEARNING
+- Keep the existing Speak and Stop Voice features.
+- Allow voice questions and spoken AI answers.
+- Add voice-based learning and language/pronunciation practice where supported.
+- Do not break the existing voice system.
+
+6. 🌍 300-LANGUAGE SUPPORT
+- Design the platform to support a target of 300 languages.
+- Add language selection.
+- Translate the learning interface where possible.
+- Allow AI learning in the selected language where the underlying AI supports it.
+- Do not falsely claim unsupported voice/model capabilities.
+- Make the architecture easy to expand to additional languages.
+
+7. 🔁 SMART REVISION
+- Detect topics that need revision.
+- Recommend what to review.
+- Use previous mistakes and weak areas.
+- Generate revision questions.
+- Track revision progress.
+- Implement spaced/repeated review where practical.
+
+8. 📈 AI LEARNING ANALYTICS
+- Analyze real student data.
+- Show improvement over time.
+- Show strongest and weakest topics.
+- Show quiz/exam performance.
+- Show study consistency.
+- Identify topics needing attention.
+- Give recommended next actions.
+- Never invent statistics.
+
+9. 🎯 LEARNING GOALS
+- Allow students to create academic and study goals.
+- Track progress toward each goal.
+- Connect goals with Study Plan, Planner, Progress, Revision and Dashboard.
+
+10. 🛤️ PERSONAL LEARNING PATH
+- Recommend what the student should learn next.
+- Identify missing prerequisite knowledge.
+- Recommend practice and revision.
+- Progress from beginner to advanced according to actual performance.
+
+11. 🏆 ACHIEVEMENTS & MILESTONES
+- Add meaningful learning achievements.
+- Recognize completed topics, improved scores, completed goals, consistent study and mastered difficult areas.
+- Keep achievements focused on personal growth, not unhealthy competition.
+
+12. ⏱️ FOCUS / STUDY SESSIONS
+- Start, pause, resume and finish study sessions.
+- Track session duration.
+- Connect sessions with Study Diary and Progress.
+- Show useful study-session statistics.
+
+13. 🏠 STUDENT HOME DASHBOARD
+Create a central dashboard showing:
+- today's learning recommendation
+- current goals
+- study plan
+- progress
+- weak topics
+- revision recommendations
+- recent achievements
+- study sessions
+- motivation/support when appropriate
+- quick access to major features
+
+14. 📚 HOMEWORK & ASSIGNMENT MODE
+- Help students understand homework.
+- Give hints before giving complete solutions.
+- Explain methods.
+- Check the student's attempt.
+- Teach rather than simply doing everything for the student.
+
+15. 🧪 SUBJECT-SPECIFIC LEARNING
+Support personalized learning/practice for:
+- Mathematics
+- Physics
+- Chemistry
+- Biology
+- English
+- other languages
+- Computer Science
+- AI
+- and additional subjects in the future.
+
+16. 🗂️ NOTES & LEARNING MATERIALS
+- Allow students to save and organize notes/materials where supported.
+- Allow the AI to use student-provided materials as learning context.
+- Help summarize and explain uploaded learning materials.
+
+17. 👤 STUDENT PROFILE & PREFERENCES
+Add a profile/settings system for:
+- name
+- grade/education level
+- preferred language
+- subjects
+- learning goals
+- learning preferences
+- other appropriate educational settings.
+
+18. 🔔 OPTIONAL REMINDERS & NOTIFICATIONS
+- Study reminders.
+- Revision reminders.
+- Goal reminders.
+- Planned-session reminders.
+- Make notifications optional and user-controlled.
+
+19. 💰 FREE & PREMIUM ARCHITECTURE
+Support:
+- Free: $0
+- Premium: $1.99/month
+- Premium yearly: $14.99/year
+- Do not implement fake payment processing.
+- Prepare the architecture for real payment integration later.
+
+20. 🔐 PRIVACY & SECURITY
+- Protect student data.
+- Separate users' data.
+- Never expose one student's information to another.
+- Do not put secret API keys in frontend code.
+- Use secure environment variables/secrets.
+- Avoid unnecessary logging of sensitive information.
+- Validate user input.
+
+21. 🧩 CONNECT EVERYTHING TOGETHER
+Do not make the new features isolated.
+
+Connect:
+AI Tutor ↔ Personalization
+AI Tutor ↔ Strengths
+AI Tutor ↔ Weaknesses
+AI Tutor ↔ Progress
+AI Tutor ↔ Study Plan
+AI Tutor ↔ Quiz
+AI Tutor ↔ Exam Mode
+AI Tutor ↔ Revision
+AI Tutor ↔ Motivation
+Quiz ↔ Progress
+Exam Mode ↔ Progress
+Study Plan ↔ Planner
+Study Plan ↔ Goals
+Study Diary ↔ Progress
+Study Sessions ↔ Study Diary
+Weaknesses ↔ Revision
+Weaknesses ↔ Personalized Learning
+Strengths ↔ Personalized Learning
+Feelings Journal ↔ Motivation
+Goals ↔ Dashboard
+Achievements ↔ Progress
+Photo Learning ↔ AI Tutor
+Voice Learning ↔ AI Tutor
+Language Selection ↔ the whole learning experience.
+
+22. 🧠 UNDERSTANDING-FIRST TEACHING
+- Prioritize understanding over memorization.
+- Ask what the student already understands.
+- Find misconceptions.
+- Explain the underlying concept.
+- Give examples.
+- Ask the student to solve/try.
+- Give feedback.
+- Gradually increase difficulty.
+
+23. 🤝 AI LEARNING COMPANION
+The AI should remember appropriate learning context during the student's experience and behave like a continuous learning companion rather than treating every question as completely unrelated.
+
+24. 🧭 SMART NEXT-ACTION RECOMMENDATIONS
+After a lesson, quiz, exam, study session or difficult interaction, recommend the most useful next action based on actual student data.
+
+25. 📊 PERSONALIZED STUDY RECOMMENDATIONS
+Recommend:
+- what to study today
+- what to revise
+- what to practice
+- what to stop/reduce
+- what needs more attention
+based on goals, progress and weaknesses.
+
+26. 📝 MISTAKE ANALYSIS
+Create a system that records learning mistakes where appropriate and identifies patterns:
+- careless mistakes
+- conceptual misunderstandings
+- recurring weak topics
+- difficult question types
+Then use these patterns to personalize future teaching and practice.
+
+27. 📚 LEARNING RESOURCE SUPPORT
+Where technically possible, allow students to work with their own textbooks, notes, documents and learning resources, while clearly distinguishing student-provided material from AI-generated information.
+
+28. 🌐 ACCESSIBILITY
+Make the platform accessible and easy to use:
+- mobile-friendly
+- readable text
+- clear buttons
+- keyboard accessibility where applicable
+- voice alternatives where supported
+- simple navigation.
+
+29. 🛡️ RESPONSIBLE AI
+- Never fabricate grades, progress, achievements, statistics or capabilities.
+- Clearly indicate when information is uncertain.
+- Do not pretend an unavailable API/backend feature is working.
+- Protect students from inappropriate content.
+- Keep educational responses age-appropriate.
+
+30. ⚙️ SCALABLE ARCHITECTURE
+Build the new features in a modular way so ALVNTORA can grow later without rewriting the whole application.
+
+IMPORTANT:
+KEEP ALL EXISTING FEATURES EXACTLY AS THEY ARE.
+DO NOT DELETE THE EXISTING 13 FEATURE BUTTONS.
+DO NOT BREAK THE CURRENT CHAT, VOICE, OR EVENT LISTENERS.
+FIRST INSPECT THE EXISTING CODE AND THEN ADD THESE FEATURES TO IT.
